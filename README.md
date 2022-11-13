@@ -3,7 +3,7 @@ This repository is an opinionated Visual Studio template for quickly setting up 
 
 The templating tool [Cookiecutter](https://cookiecutter.readthedocs.io/) is used to generate the project folder structure, whereas the build configuration tool [Premake](https://premake.github.io/docs/) is used to generate the Visual Studio project files.
 
-The project structure generated from following  [Setup Guide](#SetupGuide) steps has the following directory structure:
+The project structure generated from following  [Setup Guide](#SetupGuide) has the directory structure:
 
 ```
 |- <root_folder_name>   
