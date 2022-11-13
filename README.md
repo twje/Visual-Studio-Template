@@ -1,9 +1,7 @@
 # Description
-This repository is a Visual Studio template for quickly setting up C++ based projects. 
+This repository is an opinionated Visual Studio template for quickly setting up C++ based projects. 
 
-Cookiecutter is used to generate the project folder structure and files and Premake5 is used to generate the project files such as Visual Studio, XCode and make etc.
-
-Note, this project template is opinionated.
+Cookiecutter is used to generate the project folder structure and files and Premake5 is used to generate the project files such as Visual Studio, XCode and Make etc.
 
 # Prerequisites
 
@@ -35,20 +33,23 @@ Enter values for the following template tokens:
 
 Example Project Structure (after premake is called - see [Create the Visual Studio Solution](#CreateVSSolution)):
 ```
-|- <root_folder_name>
-   |- .gitignore
+|- <root_folder_name>   
    |- GenerateProjects.bat
    |- <solution_name>.sln
    |- <project_name>
       |- <project_name>.vxproj
       |- src
-         |- main.cpp      
+         |- main.cpp
+      |- vendor
+         |- README.md (instructions to add precompiled libraries)
    |- vendor
       |- bin
          |- premake
             |- premake5.exe
             |- LICENCE.txt
    |- Dependencies
+      |- README.md (instructions to add source libraries)
+   |- .gitignore
 ```
 
 Navigate into the generate Cookiecutter project directory:
@@ -75,7 +76,6 @@ Add the created Cookie cutter project to a Github repository:
 ```
 
 # Add third party libraries
-These instructions is a matter of preference on how I like to incorporate third party libraries into a Visual Studio project using Premake5.
 
-- [Pre-compiled libraries](./{{cookiecutter.root_folder_name}}/Dependencies/README.md)
-- [Source libraries](./{{cookiecutter.root_folder_name}}/{{cookiecutter.project_name}}/vendor/README.md)
+- [Add precompiled libraries](./{{cookiecutter.root_folder_name}}/Dependencies/README.md)
+- [Add source libraries](./{{cookiecutter.root_folder_name}}/{{cookiecutter.project_name}}/vendor/README.md)
