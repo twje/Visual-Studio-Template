@@ -34,12 +34,12 @@ This template should also work for other project types. To generate a different 
 # Prerequisites
 
 ## Software
-- Visual Studio
-- Python
-- Premake5 (this binary is checked into the template for convenience at \vendor\bin\premake\premake5.exe)
+- [Visual Studio](https://visualstudio.microsoft.com/)
+- [Python](https://www.python.org/)
+- [Premake](https://premake.github.io/docs/) (this binary is checked into the template for convenience at \vendor\bin\premake\premake5.exe)
 
 ## Tools
-- Cookiecutter - Python package for templating projects.
+- [Cookiecutter](https://cookiecutter.readthedocs.io/) - Python package for templating projects.
 
 Install the Python cookiecutter package:
 ```
