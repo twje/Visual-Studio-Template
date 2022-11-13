@@ -14,14 +14,14 @@ The project structure generated from following  [Setup Guide](#SetupGuide) steps
       |- src
          |- main.cpp
       |- vendor
-         |- README.md (instructions to add precompiled libraries)
+         |- README.md (Steps to add precompiled libraries)
    |- vendor
       |- bin
          |- premake
             |- premake5.exe
             |- LICENCE.txt
    |- Dependencies
-      |- README.md (instructions to add source libraries)
+      |- README.md (Steps to add source libraries)
    |- .gitignore
 ```
 
@@ -74,7 +74,7 @@ Create the Visual Studio Solution:
 
 *Optional*
 
-Add the created Cookie cutter project to a Github repository:
+Push the generated project to a Github repository:
 
 ```
 >> git init
