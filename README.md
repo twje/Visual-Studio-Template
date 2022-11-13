@@ -5,7 +5,6 @@ The templating tool [Cookiecutter](https://cookiecutter.readthedocs.io/) is used
 
 The project structure generated from following  [Setup Guide](#SetupGuide) steps has the following directory structure:
 
-
 ```
 |- <root_folder_name>   
    |- GenerateProjects.bat
@@ -59,7 +58,7 @@ Enter values for the following template tokens:
 - **root_folder_name**: The folder name of the root directory
 - **solution_name**: The Visual Studio Solution name
 - **project_name**: The Visual Studio Project name
-- **project_type**: The name of the project premake will generate (see [list](https://premake.github.io/docs/Using-Premake) of supported projects)
+- **project_type**: The name of the project premake will generate
 
 
 Navigate into the generate Cookiecutter project directory:
@@ -85,8 +84,3 @@ Add the created Cookie cutter project to a Github repository:
 >> git remote add origin <git_url>
 >> git push -u origin main
 ```
-
-# Add third party libraries
-
-- [Add precompiled libraries](./{{cookiecutter.root_folder_name}}/Dependencies/README.md)
-- [Add source libraries](./{{cookiecutter.root_folder_name}}/{{cookiecutter.project_name}}/vendor/README.md)
