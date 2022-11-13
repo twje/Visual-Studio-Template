@@ -48,6 +48,7 @@ Example Project Structure (after premake is called - see [Create the Visual Stud
          |- premake
             |- premake5.exe
             |- LICENCE.txt
+   |- Dependencies
 ```
 
 Navigate into the generate Cookiecutter project directory:
@@ -76,8 +77,5 @@ Add the created Cookie cutter project to a Github repository:
 # Add third party libraries
 These instructions is a matter of preference on how I like to incorporate third party libraries into a Visual Studio project using Premake5.
 
-## Precompiled Binaries
-<tba>
-
-## Source
-<tba>
+- [Pre-compiled libraries](./{{cookiecutter.root_folder_name}}/Dependencies/README.md)
+- [Source libraries](./{{cookiecutter.root_folder_name}}/{{cookiecutter.project_name}}/vendor/README.md)
