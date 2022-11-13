@@ -1,6 +1,6 @@
-workspace "Workspace"
+workspace "{{cookiecutter.solution_name}}"
 	architecture "x64"
-	startproject "Project"
+	startproject "{{cookiecutter.project_name}}"
 
 	configurations
 	{
@@ -11,8 +11,8 @@ workspace "Workspace"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
-project "Project"
-	location "Project"
+project "{{cookiecutter.project_name}}"
+	location "{{cookiecutter.project_name}}"
 	kind "ConsoleApp"
 	language "C++"
 	cppdialect "C++17"
